@@ -8,10 +8,10 @@ inputs:
   path:
     description: 'File or directory to run interrogate on.'
     required: True
-  # fail-under:
-  #   description: 'Fail when coverage % is less than a given amount.'
-  #   required: false
-  #   default: '80'
+  fail-under:
+    description: 'Fail when coverage % is less than a given amount.'
+    required: false
+    default: '80'
   # exclude:
   #   description: 'Exclude PATHs of files and/or directories.'
   #   required: false
@@ -36,7 +36,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
-    # - ${{ inputs.fail-under }}
+    - ${{ inputs.fail-under }}
     # - ${{ inputs.exclude }}
     # - ${{ inputs.ignore-init-method }}
     # - ${{ inputs.ignore-init-module }}

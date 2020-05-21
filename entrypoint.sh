@@ -3,10 +3,10 @@ set -eax
 
 interrogate --version
 
-if interrogate --generate-badge $2 $1 | grep -q 'PASSED'; then
-    interrogate --generate-badge $2 $1
+if interrogate --fail-under $2 --generate-badge $3 $1 | grep -q 'PASSED'; then
+    interrogate --fail-under $2 --generate-badge $3 $1
     exit 0
 else 
-    interrogate --generate-badge $2 $1
+    interrogate --fail-under $2 --generate-badge $3 $1
     exit 1
 fi
