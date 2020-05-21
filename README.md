@@ -11,7 +11,7 @@ You can use inputs to alter how `interrogate` will check your code docstrings.
 This tells `interrogate` where to look for files to check.
 
 **Default**: `.`, i.e. looks for files in the whole repository.
-
+<!-- 
 ### fail-under (optional)
 
 Fail when coverage % is less than a given amount.
@@ -32,9 +32,9 @@ Ignore `__init__` method of classes.
 
 Ignore `__init__.py` modules.
 
-**Default**: `False`
+**Default**: `False` -->
 
-### generate-badge (optional)
+### badge-location (optional)
 
 Generate a `shields.io` status badge (an SVG image) in at a given file or directory.
 
@@ -54,8 +54,4 @@ or, if you want to override any of the defaults,
 uses: JackMcKew/python-interrogate-check@master
 with:
   path: 'package_name/'
-  exclude: 'setup.py'
-  ignore-init-method: 'True'
-  ignore-init-module: 'True'
-  generate-badge: 'badges/'
 ```

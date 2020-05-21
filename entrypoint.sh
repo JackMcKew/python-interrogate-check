@@ -2,4 +2,9 @@
 set -eax
 
 interrogate --version
-interrogate --fail-under $2 --exclude $3 --ignore-init-method $4 --ignore-init-module $5 --generate-badge $6 $1
+
+if interrogate --generate-badge $2 $1 | grep -q 'PASSED'; then
+    echo 0
+else 
+    echo 1
+fi
