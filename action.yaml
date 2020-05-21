@@ -7,8 +7,7 @@ branding:
 inputs:
   path:
     description: 'File or directory to run interrogate on.'
-    required: false
-    default: '.'
+    required: True
   # fail-under:
   #   description: 'Fail when coverage % is less than a given amount.'
   #   required: false

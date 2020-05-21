@@ -6,11 +6,10 @@ A customisable GitHub action to check the style of Python code with [interrogate
 
 You can use inputs to alter how `interrogate` will check your code docstrings.
 
-### Path (optional)
+### Path
 
 This tells `interrogate` where to look for files to check.
 
-**Default**: `.`, i.e. looks for files in the whole repository.
 <!-- 
 ### fail-under (optional)
 
