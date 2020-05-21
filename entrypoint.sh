@@ -4,7 +4,9 @@ set -eax
 interrogate --version
 
 if interrogate --generate-badge $2 $1 | grep -q 'PASSED'; then
-    echo 0
+    interrogate --generate-badge $2 $1
+    exit 0
 else 
-    echo 1
+    echo interrogate --generate-badge $2 $1
+    exit 1
 fi
