@@ -44,7 +44,7 @@ Generate a `shields.io` status badge (an SVG image) in at a given file or direct
 Include this in your `.github/workflows/main.yaml`:
 
 ```yaml
-uses: JackMcKew/python-interrogate-check@master
+uses: JackMcKew/python-interrogate-check@main
 with:
   path: 'package_name'
 ```
@@ -77,7 +77,7 @@ jobs:
         python-version: 3.8
 
     - name: Python Interrogate Check
-      uses: JackMcKew/python-interrogate-check@master
+      uses: JackMcKew/python-interrogate-check@main
       with:
         path: 'sample_package'
         badge-location: 'badges/interrogate_badge.svg'
