@@ -87,7 +87,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add badges/interrogate_badge.svg
-        git commit -m "Update interrogate_badge.svg" -a
+        git diff --exit-code || git commit -m "Update interrogate_badge.svg" -a
 
     - name: Push changes
       if: success()
