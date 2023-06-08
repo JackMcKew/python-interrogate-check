@@ -39,6 +39,13 @@ Generate a `shields.io` status badge (an SVG image) in at a given file or direct
 
 **Default**: `.`
 
+### ignore-module (optional)
+
+Ignore module-level docstrings when running `interrogate`.
+
+**Default**: `False`
+
+
 ## Example usage
 
 Include this in your `.github/workflows/main.yaml`:

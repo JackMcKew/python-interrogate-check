@@ -12,6 +12,10 @@ inputs:
     description: 'Fail when coverage % is less than a given amount.'
     required: false
     default: '80'
+  ignore-module:
+    description: 'Ignore module-level docstrings'
+    required: false
+    default: false
   # exclude:
   #   description: 'Exclude PATHs of files and/or directories.'
   #   required: false
@@ -41,3 +45,4 @@ runs:
     # - ${{ inputs.ignore-init-method }}
     # - ${{ inputs.ignore-init-module }}
     - ${{ inputs.badge-location }}
+    - ${{ inputs.ignore-module }}
