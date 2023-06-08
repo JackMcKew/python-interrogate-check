@@ -16,12 +16,6 @@ Fail when coverage % is less than a given amount.
 
 **Default**: `80`
 
-### ignore-module (optional)
-
-Ignore module-level docstrings when running `interrogate`.
-
-**Default**: `False`
-
 <!-- 
 ### exclude (optional)
 
@@ -44,6 +38,13 @@ Ignore `__init__.py` modules.
 Generate a `shields.io` status badge (an SVG image) in at a given file or directory.
 
 **Default**: `.`
+
+### ignore-module (optional)
+
+Ignore module-level docstrings when running `interrogate`.
+
+**Default**: `False`
+
 
 ## Example usage
 
