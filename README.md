@@ -16,6 +16,12 @@ Fail when coverage % is less than a given amount.
 
 **Default**: `80`
 
+### ignore-module (optional)
+
+Ignore module-level docstrings when running `interrogate`.
+
+**Default**: `False`
+
 <!-- 
 ### exclude (optional)
 
