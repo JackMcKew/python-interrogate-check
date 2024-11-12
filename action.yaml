@@ -16,6 +16,10 @@ inputs:
     description: 'Ignore module-level docstrings'
     required: false
     default: false
+  verbose:
+    description: 'Show verbose output'
+    required: false
+    default: false
   # exclude:
   #   description: 'Exclude PATHs of files and/or directories.'
   #   required: false
@@ -46,3 +50,4 @@ runs:
     # - ${{ inputs.ignore-init-module }}
     - ${{ inputs.badge-location }}
     - ${{ inputs.ignore-module }}
+    - ${{ inputs.verbose }}
